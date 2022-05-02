@@ -9,12 +9,12 @@ function executeCounter(): CounterReport {
     }
   };
 
-  const elementList = window.qwPage.getElements('*');
+  const elementList = window.qwPage.findAll('*');
 
   //get explicit roles
   for (const element of elementList ?? []) {
-    const role = window.AccessibilityUtils.getElementRole(element);
-    const tag = element.getElementTagName();
+    const role = element.getRole();
+    const tag = element.getTagName();
 
     // count elements
     if (role) {
