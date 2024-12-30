@@ -1,3 +1,5 @@
+This repository has been archived. QualWeb is now being maintained in a monorepo at https://github.com/qualweb/qualweb
+
 # Counter module
 
 Counts how many of each role and how many of each tag exists in the webpage.
